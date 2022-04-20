@@ -1,0 +1,31 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "The Assignment Hub",
+    "short_name": "TAH",
+    "scope": "/",
+    "display": "standalone",
+    "start_url": "https://theassignmenthub.com/index.php?utm_source=homescreen",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "description": "No. 1 Assignment Provider in the world.",
+    "orientation": "any",
+    "purpose": "maskable",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+          "src": "https://theassignmenthub.com/assets/front/images/ICON-192.png",
+          "type": "image/png",
+          "sizes": "192x192",
+          "purpose": "any maskable"
+        },
+        {
+          "src": "https://theassignmenthub.com/assets/front/images/ICON-512.png",
+          "type": "image/png",
+          "sizes": "512x512",
+          "purpose": "any maskable"
+        }
+    ],
+    "url": "https://theassignmenthub.com/"
+}
