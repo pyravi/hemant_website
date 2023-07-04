@@ -1,0 +1,154 @@
+// Hero Banner
+.hero-wrap {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    .hero-slide-item {
+        position: relative;
+        z-index: 1;
+
+        .content-title-one {
+            max-width: 750px;
+            margin: 100px auto;
+            text-align: center;
+
+            @media only screen and (max-width: $break-767) {
+                margin: 60px auto;
+            }
+
+            h1 {
+                font-size: $fz-50;
+                color: $white-clr;
+                text-shadow: 0 7px 10px $black-clr;
+                max-width: 550px;
+                display: inline-block;
+
+                @media only screen and (max-width: $break-767) {
+                    font-size: $fz-30;
+                }
+            }
+
+            p {
+                color: $white-clr;
+                font-size: $fz-18;
+                text-shadow: 0 4px 10px $black-clr;
+
+                @media only screen and (max-width: $break-767) {
+                    font-size: $fz-16;
+                }
+            }
+        }
+    }
+}
+
+// About Wrap One
+.about-wrap-one {
+    padding: 60px 0;
+    position: relative;
+    z-index: 1;
+
+    .img-wrap {
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+
+        .features-list {
+            margin: 28px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+        }
+
+        .counter-wrap {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+    }
+}
+
+// Features Wrap One
+.feature-wrap-one {
+    padding-top: 60px;
+
+    .feature-card-one {
+        height: 100%;
+    }
+}
+
+// Features Wrap Two
+.features-wrap-two {
+    padding: 60px 0;
+
+    .feature-slider-one {
+        .swiper-pagination {
+            width: 100% !important;
+            position: relative;
+            top: unset;
+            bottom: unset;
+            left: 0;
+            transform: translate(0);
+            margin-top: 10px;
+        }
+    }
+}
+
+// How It Works Wrap One
+.hiw-wrap-one {
+    padding-top: 60px;
+}
+
+// Testimonial Wrap One
+.testimonial-wrap-one {
+    position: relative;
+    padding: 60px 0;
+    z-index: 1;
+
+    .testimonial-slider-one {
+        position: relative;
+        .testimonial-card-one {
+            margin-bottom: 10px;
+        }
+    }
+
+    .testimonial-btn {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        transform: translate(-50%, -50%);
+        width: calc(100% - 100px);
+
+        @media only screen and (max-width: $break-767) {
+            position: relative;
+            width: 100%;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .testimonial-button-prev,
+        .testimonial-button-next {
+            cursor: pointer;
+
+            img {
+                transition: $transition-ease5;
+                width: 40px;
+
+                @media only screen and (max-width: $break-767) {
+                    width: 30px;
+                }
+            }
+        }
+    }
+}

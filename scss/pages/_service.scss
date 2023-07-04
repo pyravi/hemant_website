@@ -1,0 +1,59 @@
+// Service Page One
+.service-pg-one {
+    padding: 60px 0;
+
+    .service-card-one {
+        height: 100%;
+    }
+}
+
+// Subject Page One
+.subject-pg-one {
+    padding: 60px 0;
+
+    .subject-card-one {
+        height: 100%;
+    }
+}
+
+// Service Details One
+.service-details-one {
+    padding: 60px 0;
+
+    .service-desc {
+        max-width: 990px;
+
+        .single-img {
+            border-radius: 10px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .features-item-wrap {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 40px;
+
+            @media only screen and (max-width: $break-767) {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+
+        .service-title {
+            h3 {
+                margin-bottom: 22px;
+            }
+        }
+
+        .accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+}

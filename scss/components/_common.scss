@@ -1,0 +1,61 @@
+// Background
+.bg-f {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #ddd;
+}
+
+.bg_primary {
+    background-color: $primary-color;
+}
+
+.bg_secondary {
+    background-color: $secondary-color;
+}
+
+.bg_ash {
+    background-color: $bg-color;
+}
+
+// Gap
+.gap-y1 {
+    gap: 1em 0;
+}
+
+.gap-y2 {
+    gap: 2em 0;
+}
+
+.pt-60 {
+    padding-top: 60px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-35 {
+    margin-bottom: 35px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+// List
+.list-style {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        list-style: none;
+    }
+}
+
+.list-grid-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}

@@ -1,0 +1,128 @@
+// Reset
+* {
+    box-sizing: border-box;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: darken($white-clr, 15%);
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: darken($white-clr, 30%);
+        border-radius: 10px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: $fz-15;
+    font-family: $body-font;
+    color: $para-color;
+    font-weight: 400;
+    line-height: 26px;
+    overflow-x: hidden;
+
+    @media only screen and (max-width: $break-767) {
+        font-size: $fz-14;
+    }
+}
+
+button,
+.btn {
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+}
+
+.form-control {
+    font-size: 1em;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+a,
+button,
+input[type=submit] {
+    cursor: pointer;
+}
+
+input,
+input {
+    &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 0;
+    }
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+}
+
+input,
+textarea,
+select {
+    background-color: transparent;
+    border: 1px solid rgba($black-clr, 0.15);
+    padding: 12px 15px;
+    width: 100%;
+    font-size: $fz-15;
+}
+
+input {
+    height: 50px;
+}
+
+select {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../images/icons/down-arrow.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: calc(100% - 15px) 50%;
+}
+
+a {
+    text-transform: inherit;
+    text-decoration: none;
+    transition: $transition-ease3;
+    color: $primary-color;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        box-shadow: none;
+        outline: 0;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $secondary-font;
+    font-weight: 700;
+    color: $secondary-color;
+}

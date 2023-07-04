@@ -1,0 +1,189 @@
+// Footer
+.footer-wrap {
+    background-color: $para2-color;
+    font-size: $fz-14;
+    position: relative;
+    z-index: 1;
+
+    .footer-widget {
+
+        .footer-logo {
+            display: inline-block;
+
+            img {
+                height: 70px;
+            }
+        }
+
+        .footer-widget-title {
+            margin-bottom: 22px;
+            color: $white-clr;
+
+            @media only screen and (max-width: $break-767) {
+                margin-bottom: 15px;
+            }
+        }
+
+        .comp-desc {
+            margin: 30px 0 28px;
+            color: $bg-color-two;
+
+            @media only screen and (max-width: $break-767) {
+                margin: 20px 0;
+            }
+        }
+
+        .footer-menu {
+            li {
+                a {
+                    position: relative;
+                    color: $bg-color-two;
+
+                    &:after {
+                        position: absolute;
+                        bottom: -2px;
+                        left: 0;
+                        content: "";
+                        width: 0;
+                        height: 1px;
+                        background-color: $primary-color;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: $transition-ease5;
+                    }
+
+                    i {
+                        font-size: $fz-16;
+                        top: 2px;
+                    }
+
+                    &:hover {
+                        color: $primary-color;
+
+                        &:after {
+                            width: 100%;
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+
+            @media only screen and (max-width: $break-767) {
+                gap: 10px;
+            }
+
+            li {
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+
+                    span {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                        flex-shrink: 0;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background: rgba(255, 255, 255, .06);
+                        box-shadow: 0 0 30px rgba(254, 74, 85, .09);
+                        transition: $transition-ease5;
+
+                        i {
+                            color: $white-clr;
+                            transition: $transition-ease5;
+                        }
+                    }
+                }
+
+                p,
+                a {
+                    margin: 0;
+                    color: $bg-color-two;
+                    transition: $transition-ease5;
+                }
+
+                &:hover {
+                    span {
+                        i {
+                            color: $primary-color;
+                        }
+                    }
+
+                    p,
+                    a {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-top {
+        position: relative;
+        padding: 60px 0;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .copyright-text {
+        padding: 25px 0;
+        border-top: 1px solid rgba($white-clr, .08);
+
+        @media only screen and (max-width: $break-767) {
+            padding: 20px 0;
+        }
+
+        p {
+            color: $white-clr;
+
+            @media only screen and (max-width: $break-767) {
+                text-align: center;
+            }
+
+            a,
+            span {
+                color: $primary-color;
+            }
+        }
+
+        .social-profile {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+
+            @media only screen and (max-width: $break-767) {
+                justify-content: center;
+            }
+            li {
+                a {
+                    width: 34px;
+                    height: 34px;
+                    background-color: rgba(255, 255, 255, .08);
+
+                    i {
+                        font-size: 16px;
+                        color: $primary-color;
+                    }
+
+                    &:hover {
+                        background-color: $primary-color;
+
+                        i {
+                            color: $white-clr;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

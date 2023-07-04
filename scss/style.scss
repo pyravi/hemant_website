@@ -1,0 +1,48 @@
+/* Font */
+@import "https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&amp;family=El+Messiri:wght@400;500;600;700&amp;family=Josefin+Sans:wght@200;300;400;500;600;700&amp;display=swap";
+
+/* AOS - Animate on Scroll */
+@import "../plugins/aos/aos.css";
+
+/* Font Awesome */
+@import "../plugins/fontawesome/scss/fontawesome";
+@import "../plugins/fontawesome/scss/solid";
+@import "../plugins/fontawesome/scss/brands";
+@import "../plugins/fontawesome/scss/regular";
+
+/* Remix Icons */
+@import "../plugins/remix-icon/scss/remixicon";
+
+/* Flat Icons */
+@import "../plugins/flaticon/flaticon.css";
+
+/* Bootstrap */
+@import "../plugins/bootstrap/scss/bootstrap";
+
+/* Owl Carousel */
+@import "../plugins/OwlCarousel-2/scss/owl.carousel";
+@import "../plugins/OwlCarousel-2/scss/owl.theme.default";
+
+/* Swiper Carousel */
+@import "../plugins/swiper-slider/swiper.bundle.min.css";
+
+/* Lightbox */
+@import "../plugins/lightbox/gallery";
+
+/* Components */
+@import "components/variables";
+@import "components/mixins";
+@import "components/keyframe";
+@import "components/reset";
+@import "components/plugin-edit";
+@import "components/forms";
+@import "components/heading";
+@import "components/header";
+@import "components/footer";
+@import "components/components";
+@import "components/common";
+
+/* Pages */
+@import "pages/home";
+@import "pages/service";
+@import "pages/static";
